@@ -1,4 +1,4 @@
-# Continental Maps fo 0 A.D.
+# Continental Maps for 0 A.D.
 
 ## North and Central America
 
