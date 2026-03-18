@@ -2,7 +2,7 @@
 
 ## North and Central America
 
-![](./North%20America/screenshot0001.png)
+![](./images/North%20America/screenshot0001.png)
 
 Each player near the ocean has a dock.
 The map has four main biomes:
@@ -18,7 +18,7 @@ On Rocky Mountains there is a passage to make map funnier.
 
 ## South America
 
-![](./South%20America/screenshot0002.png)
+![](./images/South%20America/screenshot0002.png)
 
 Each player near the ocean has a dock.
 The map has four main biomes:
@@ -39,11 +39,11 @@ It was a <b>really really big work</b> and obviously the Earth is deformed, more
 
 <i>Pay attention: to give more important to inhabited continents I changed a bit the projection and removed the Earth poles.</i>
 
-![](./World/screenshot0021.png)
+![](./images/World/screenshot0021.png)
 
 This is my most ambitious project and I was almost loyal to real biomes. It's impossible to list them all. I based my work on this map: 
 
-![](./World/Vegetation.png)
+![](./images/World/Vegetation.png)
 
 <i> Source: [Wikipedia](https://en.wikipedia.org/wiki/Biome#/media/File:Vegetation.png) </i>
 
