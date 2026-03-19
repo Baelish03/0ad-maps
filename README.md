@@ -13,8 +13,6 @@ The map has four main biomes:
 4. Tropical in Florida, Yucatan peninsula and Cuba island.
 
 A civic center can be build on Yucatan and Cuba, while you can't on Ande and Appalacchia mountains.
-On Rocky Mountains there is a passage to make map funnier.
-
 
 ## South America
 
