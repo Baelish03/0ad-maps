@@ -32,9 +32,9 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="3316.75" y="1439.04" z="1499.35"/>
-		<Rotation angle="0.0581467"/>
-		<Declination angle="0.610866"/>
+		<Position x="1665.53" y="1634.68" z="-763.448"/>
+		<Rotation angle="0.146176"/>
+		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
@@ -42,6 +42,7 @@
   "Description": "Give an interesting description of your map.",
   "Name": "Unnamed map",
   "PlayerData": [
+    null,
     {
       "Civ": "han"
     },
