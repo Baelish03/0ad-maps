@@ -19,7 +19,7 @@
 				<Tint r="0.27451" g="0.294118" b="0.584314"/>
 				<Height>10.0053</Height>
 				<Waviness>4</Waviness>
-				<Murkiness>0.794922</Murkiness>
+				<Murkiness>0.90332</Murkiness>
 				<WindAngle>0</WindAngle>
 			</WaterBody>
 		</Water>
@@ -32,9 +32,9 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="3099.55" y="425.168" z="1128.26"/>
-		<Rotation angle="-0.863663"/>
-		<Declination angle="0.610866"/>
+		<Position x="1604.14" y="2142.75" z="135.311"/>
+		<Rotation angle="0.208012"/>
+		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
