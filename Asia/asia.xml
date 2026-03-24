@@ -32,15 +32,19 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="2034.53" y="1092.01" z="-812.967"/>
-		<Rotation angle="0.563904"/>
-		<Declination angle="0.610867"/>
+		<Position x="3099.55" y="425.168" z="1128.26"/>
+		<Rotation angle="-0.863663"/>
+		<Declination angle="0.610866"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
+  "AISeed": 0,
+  "AllyView": false,
   "CircularMap": true,
   "Description": "Give an interesting description of your map.",
-  "Name": "Unnamed map",
+  "Keywords": [],
+  "LockTeams": false,
+  "Name": "Asia",
   "PlayerData": [
     null,
     {
@@ -68,11 +72,70 @@
       "Civ": "spart"
     }
   ],
+  "Preview": "",
+  "RevealMap": false,
   "VictoryConditions": [
     "conquest"
   ]
 }
 ]]></ScriptSettings>
-	<Entities/>
+	<Entities>
+		<Entity uid="11">
+			<Template>skirmish/structures/default_civil_centre</Template>
+			<Player>1</Player>
+			<Position x="364.50214" z="1318.51014"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="52551"/>
+		</Entity>
+		<Entity uid="12">
+			<Template>skirmish/structures/default_civil_centre</Template>
+			<Player>2</Player>
+			<Position x="1579.82996" z="1061.17127"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="15882"/>
+		</Entity>
+		<Entity uid="13">
+			<Template>skirmish/structures/default_civil_centre</Template>
+			<Player>3</Player>
+			<Position x="2434.72242" z="1092.50232"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="52501"/>
+		</Entity>
+		<Entity uid="14">
+			<Template>skirmish/structures/default_civil_centre</Template>
+			<Player>4</Player>
+			<Position x="2149.5188" z="2426.10792"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13706"/>
+		</Entity>
+		<Entity uid="15">
+			<Template>skirmish/structures/default_civil_centre</Template>
+			<Player>5</Player>
+			<Position x="447.58817" z="2990.4131"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="11964"/>
+		</Entity>
+		<Entity uid="16">
+			<Template>skirmish/structures/default_civil_centre</Template>
+			<Player>6</Player>
+			<Position x="3168.5" z="2455.83252"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="8507"/>
+		</Entity>
+		<Entity uid="17">
+			<Template>skirmish/structures/default_civil_centre</Template>
+			<Player>7</Player>
+			<Position x="1505.13294" z="3282.00855"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="63655"/>
+		</Entity>
+		<Entity uid="18">
+			<Template>skirmish/structures/default_civil_centre</Template>
+			<Player>8</Player>
+			<Position x="2696.90308" z="3610.35474"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="59589"/>
+		</Entity>
+	</Entities>
 	<Paths/>
 </Scenario>
