@@ -4,12 +4,12 @@
 	<Environment>
 		<SkySet>sunrise</SkySet>
 		<SunColor r="0.74902" g="0.74902" b="0.74902"/>
-		<SunElevation angle="0.78058"/>
-		<SunRotation angle="0.0169476"/>
+		<SunElevation angle="0.81301"/>
+		<SunRotation angle="-0.0368156"/>
 		<AmbientColor r="0.501961" g="0.501961" b="0.501961"/>
 		<Fog>
-			<FogFactor>0</FogFactor>
-			<FogThickness>0.5</FogThickness>
+			<FogFactor>0.000478516</FogFactor>
+			<FogThickness>0.47998</FogThickness>
 			<FogColor r="0.8" g="0.8" b="0.894118"/>
 		</Fog>
 		<Water>
@@ -24,7 +24,7 @@
 			</WaterBody>
 		</Water>
 		<Postproc>
-			<Brightness>0</Brightness>
+			<Brightness>-0.136719</Brightness>
 			<Contrast>1</Contrast>
 			<Saturation>0.99</Saturation>
 			<Bloom>0.1999</Bloom>
@@ -32,8 +32,8 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="1604.14" y="2142.75" z="135.311"/>
-		<Rotation angle="0.208012"/>
+		<Position x="728.229" y="169.19" z="985.326"/>
+		<Rotation angle="-0.729292"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
@@ -41,38 +41,21 @@
   "AISeed": 0,
   "AllyView": false,
   "CircularMap": true,
-  "Description": "Give an interesting description of your map.",
+  "Description": "1024x1024 Asian map made by Baelish03",
   "Keywords": [],
   "LockTeams": false,
   "Name": "Asia",
   "PlayerData": [
-    null,
-    {
-      "Civ": "han"
-    },
-    {
-      "Civ": "cart"
-    },
-    {
-      "Civ": "gaul"
-    },
-    {
-      "Civ": "iber"
-    },
-    {
-      "Civ": "pers"
-    },
-    {
-      "Civ": "ptol"
-    },
-    {
-      "Civ": "rome"
-    },
-    {
-      "Civ": "spart"
-    }
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
   ],
-  "Preview": "",
+  "Preview": "asia.png",
   "RevealMap": false,
   "VictoryConditions": [
     "conquest"
@@ -97,14 +80,14 @@
 		<Entity uid="13">
 			<Template>skirmish/structures/default_civil_centre</Template>
 			<Player>3</Player>
-			<Position x="2434.72242" z="1092.50232"/>
+			<Position x="2409.60792" z="1152.89673"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="52501"/>
 		</Entity>
 		<Entity uid="14">
 			<Template>skirmish/structures/default_civil_centre</Template>
 			<Player>4</Player>
-			<Position x="2149.5188" z="2426.10792"/>
+			<Position x="2320.28858" z="2472.21241"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13706"/>
 		</Entity>
@@ -135,6 +118,1280 @@
 			<Position x="2696.90308" z="3610.35474"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59589"/>
+		</Entity>
+		<Entity uid="19">
+			<Template>skirmish/units/default_cavalry</Template>
+			<Player>1</Player>
+			<Position x="368.04206" z="1290.52527"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="26283"/>
+		</Entity>
+		<Entity uid="20">
+			<Template>skirmish/units/default_cavalry</Template>
+			<Player>2</Player>
+			<Position x="1584.2422" z="1035.80079"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="6918"/>
+		</Entity>
+		<Entity uid="21">
+			<Template>skirmish/units/default_cavalry</Template>
+			<Player>3</Player>
+			<Position x="2412.6338" z="1121.38831"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="55909"/>
+		</Entity>
+		<Entity uid="22">
+			<Template>skirmish/units/default_cavalry</Template>
+			<Player>6</Player>
+			<Position x="3168.11329" z="2431.27833"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="40025"/>
+		</Entity>
+		<Entity uid="23">
+			<Template>skirmish/units/default_cavalry</Template>
+			<Player>4</Player>
+			<Position x="2318.44385" z="2445.9214"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="8274"/>
+		</Entity>
+		<Entity uid="24">
+			<Template>skirmish/units/default_cavalry</Template>
+			<Player>8</Player>
+			<Position x="2693.8235" z="3580.70557"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="24114"/>
+		</Entity>
+		<Entity uid="25">
+			<Template>skirmish/units/default_cavalry</Template>
+			<Player>7</Player>
+			<Position x="1503.92518" z="3253.00904"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="45960"/>
+		</Entity>
+		<Entity uid="26">
+			<Template>skirmish/units/default_cavalry</Template>
+			<Player>5</Player>
+			<Position x="450.34513" z="2959.82251"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="27692"/>
+		</Entity>
+		<Entity uid="27">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>1</Player>
+			<Position x="374.42637" z="1293.92884"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31768"/>
+		</Entity>
+		<Entity uid="28">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>1</Player>
+			<Position x="378.29813" z="1296.95203"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="1508"/>
+		</Entity>
+		<Entity uid="29">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>1</Player>
+			<Position x="382.98758" z="1301.36463"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="19117"/>
+		</Entity>
+		<Entity uid="30">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>1</Player>
+			<Position x="387.72303" z="1305.79053"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="21210"/>
+		</Entity>
+		<Entity uid="31">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>1</Player>
+			<Position x="356.57172" z="1295.98511"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="27565"/>
+		</Entity>
+		<Entity uid="32">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>1</Player>
+			<Position x="351.65494" z="1301.10413"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="4183"/>
+		</Entity>
+		<Entity uid="33">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>1</Player>
+			<Position x="347.60193" z="1305.24915"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="22969"/>
+		</Entity>
+		<Entity uid="34">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>1</Player>
+			<Position x="342.40287" z="1311.19654"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="28326"/>
+		</Entity>
+		<Entity uid="35">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>2</Player>
+			<Position x="1556.28565" z="1056.65882"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="7434"/>
+		</Entity>
+		<Entity uid="36">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>2</Player>
+			<Position x="1562.06849" z="1050.6388"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="44338"/>
+		</Entity>
+		<Entity uid="37">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>2</Player>
+			<Position x="1566.60401" z="1045.45447"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="19455"/>
+		</Entity>
+		<Entity uid="38">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>2</Player>
+			<Position x="1572.1073" z="1039.30091"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="62133"/>
+		</Entity>
+		<Entity uid="39">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>2</Player>
+			<Position x="1589.85193" z="1039.28357"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="7272"/>
+		</Entity>
+		<Entity uid="40">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>2</Player>
+			<Position x="1594.58033" z="1043.3877"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="26205"/>
+		</Entity>
+		<Entity uid="41">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>2</Player>
+			<Position x="1599.08631" z="1048.0094"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="61783"/>
+		</Entity>
+		<Entity uid="42">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>2</Player>
+			<Position x="1604.02967" z="1052.49292"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="20456"/>
+		</Entity>
+		<Entity uid="43">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>3</Player>
+			<Position x="2420.46778" z="1125.97803"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="20354"/>
+		</Entity>
+		<Entity uid="44">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>3</Player>
+			<Position x="2425.15772" z="1130.3307"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="47729"/>
+		</Entity>
+		<Entity uid="47">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>3</Player>
+			<Position x="2429.40357" z="1136.08143"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="11822"/>
+		</Entity>
+		<Entity uid="48">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>3</Player>
+			<Position x="2434.23975" z="1143.71229"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="33333"/>
+		</Entity>
+		<Entity uid="49">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>3</Player>
+			<Position x="2402.91236" z="1127.714"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="32766"/>
+		</Entity>
+		<Entity uid="50">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>3</Player>
+			<Position x="2395.06226" z="1133.83228"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="12864"/>
+		</Entity>
+		<Entity uid="51">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>3</Player>
+			<Position x="2389.95704" z="1138.20704"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="39605"/>
+		</Entity>
+		<Entity uid="52">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>3</Player>
+			<Position x="2384.38746" z="1143.93921"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="14374"/>
+		</Entity>
+		<Entity uid="53">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>5</Player>
+			<Position x="456.3357" z="2963.19483"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10260"/>
+		</Entity>
+		<Entity uid="54">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>5</Player>
+			<Position x="460.87656" z="2967.1294"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="33642"/>
+		</Entity>
+		<Entity uid="55">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>5</Player>
+			<Position x="465.80442" z="2971.87208"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41853"/>
+		</Entity>
+		<Entity uid="56">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>5</Player>
+			<Position x="470.98023" z="2977.17261"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41629"/>
+		</Entity>
+		<Entity uid="57">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>5</Player>
+			<Position x="442.54438" z="2966.44556"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13858"/>
+		</Entity>
+		<Entity uid="58">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>5</Player>
+			<Position x="436.2642" z="2971.61988"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="50960"/>
+		</Entity>
+		<Entity uid="59">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>5</Player>
+			<Position x="428.13071" z="2978.60718"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="61584"/>
+		</Entity>
+		<Entity uid="60">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>5</Player>
+			<Position x="419.65748" z="2985.29834"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="5539"/>
+		</Entity>
+		<Entity uid="61">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>7</Player>
+			<Position x="1511.13575" z="3256.83887"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="60034"/>
+		</Entity>
+		<Entity uid="62">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>7</Player>
+			<Position x="1517.39405" z="3261.30372"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="35197"/>
+		</Entity>
+		<Entity uid="63">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>7</Player>
+			<Position x="1522.93604" z="3265.86036"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="37375"/>
+		</Entity>
+		<Entity uid="64">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>7</Player>
+			<Position x="1529.15772" z="3271.8274"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="16133"/>
+		</Entity>
+		<Entity uid="65">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>7</Player>
+			<Position x="1496.10608" z="3259.93262"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="64173"/>
+		</Entity>
+		<Entity uid="66">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>7</Player>
+			<Position x="1488.69288" z="3267.42383"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="2590"/>
+		</Entity>
+		<Entity uid="67">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>7</Player>
+			<Position x="1482.38514" z="3273.8252"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="63401"/>
+		</Entity>
+		<Entity uid="68">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>7</Player>
+			<Position x="1475.72168" z="3280.96314"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49894"/>
+		</Entity>
+		<Entity uid="69">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>8</Player>
+			<Position x="2703.93702" z="3586.22315"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="37678"/>
+		</Entity>
+		<Entity uid="70">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>8</Player>
+			<Position x="2710.42334" z="3592.93165"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="3273"/>
+		</Entity>
+		<Entity uid="71">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>8</Player>
+			<Position x="2716.60279" z="3598.74292"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="58494"/>
+		</Entity>
+		<Entity uid="72">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>8</Player>
+			<Position x="2721.00416" z="3604.27417"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="50390"/>
+		</Entity>
+		<Entity uid="73">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>8</Player>
+			<Position x="2687.33106" z="3585.86817"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42272"/>
+		</Entity>
+		<Entity uid="74">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>8</Player>
+			<Position x="2681.31275" z="3590.99781"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="5594"/>
+		</Entity>
+		<Entity uid="75">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>8</Player>
+			<Position x="2672.7671" z="3597.7256"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="4380"/>
+		</Entity>
+		<Entity uid="76">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>8</Player>
+			<Position x="2665.9397" z="3603.34522"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="16589"/>
+		</Entity>
+		<Entity uid="77">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>6</Player>
+			<Position x="3175.11426" z="2434.56592"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="25052"/>
+		</Entity>
+		<Entity uid="78">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>6</Player>
+			<Position x="3178.86353" z="2438.83326"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="5294"/>
+		</Entity>
+		<Entity uid="79">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>6</Player>
+			<Position x="3183.56714" z="2443.62842"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="23382"/>
+		</Entity>
+		<Entity uid="80">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>6</Player>
+			<Position x="3187.69605" z="2448.5774"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10174"/>
+		</Entity>
+		<Entity uid="81">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>6</Player>
+			<Position x="3146.0503" z="2448.17847"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="54912"/>
+		</Entity>
+		<Entity uid="82">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>6</Player>
+			<Position x="3155.06763" z="2441.47364"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="14054"/>
+		</Entity>
+		<Entity uid="83">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>6</Player>
+			<Position x="3159.03101" z="2438.44971"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41220"/>
+		</Entity>
+		<Entity uid="84">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>6</Player>
+			<Position x="3163.35084" z="2434.76392"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="54367"/>
+		</Entity>
+		<Entity uid="85">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>4</Player>
+			<Position x="2325.63892" z="2450.24805"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="45576"/>
+		</Entity>
+		<Entity uid="86">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>4</Player>
+			<Position x="2330.50977" z="2455.81446"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="57599"/>
+		</Entity>
+		<Entity uid="87">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>4</Player>
+			<Position x="2337.23951" z="2461.7815"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="54504"/>
+		</Entity>
+		<Entity uid="88">
+			<Template>skirmish/units/default_support_civilian</Template>
+			<Player>4</Player>
+			<Position x="2343.3877" z="2467.16993"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="22117"/>
+		</Entity>
+		<Entity uid="89">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>4</Player>
+			<Position x="2312.94532" z="2451.21094"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10764"/>
+		</Entity>
+		<Entity uid="90">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>4</Player>
+			<Position x="2307.88453" z="2455.75074"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="35989"/>
+		</Entity>
+		<Entity uid="91">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>4</Player>
+			<Position x="2302.52149" z="2461.66773"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41437"/>
+		</Entity>
+		<Entity uid="92">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>4</Player>
+			<Position x="2294.90943" z="2469.43873"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="38751"/>
+		</Entity>
+		<Entity uid="94">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="540.625" z="1125.71961"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13690"/>
+		</Entity>
+		<Entity uid="95">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="536.22327" z="1086.65967"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="52685"/>
+		</Entity>
+		<Entity uid="96">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="544.38892" z="1095.35022"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="52685"/>
+		</Entity>
+		<Entity uid="97">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="569.79621" z="1106.85206"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="28807"/>
+		</Entity>
+		<Entity uid="98">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="558.74701" z="1136.80945"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="28807"/>
+		</Entity>
+		<Entity uid="99">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="555.29377" z="1120.11255"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="15423"/>
+		</Entity>
+		<Entity uid="100">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="549.5279" z="1107.79029"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="48136"/>
+		</Entity>
+		<Entity uid="101">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="725.04273" z="1130.30066"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="48136"/>
+		</Entity>
+		<Entity uid="102">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="730.8086" z="1142.62293"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="15423"/>
+		</Entity>
+		<Entity uid="103">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="734.26185" z="1159.31983"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="28807"/>
+		</Entity>
+		<Entity uid="104">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="745.31104" z="1129.36243"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="28807"/>
+		</Entity>
+		<Entity uid="105">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="719.90375" z="1117.8606"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="52685"/>
+		</Entity>
+		<Entity uid="106">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="574.6927" z="1094.48719"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="52685"/>
+		</Entity>
+		<Entity uid="107">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="716.13984" z="1148.22999"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="13690"/>
+		</Entity>
+		<Entity uid="108">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="566.93091" z="1122.31104"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="45781"/>
+		</Entity>
+		<Entity uid="109">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="574.30262" z="1081.32898"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="48136"/>
+		</Entity>
+		<Entity uid="110">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="580.06849" z="1093.65125"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="15423"/>
+		</Entity>
+		<Entity uid="111">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="720.56714" z="1125.03101"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="28807"/>
+		</Entity>
+		<Entity uid="112">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="731.61634" z="1095.07361"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="28807"/>
+		</Entity>
+		<Entity uid="113">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="569.16364" z="1068.88892"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="52685"/>
+		</Entity>
+		<Entity uid="114">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="560.998" z="1060.19837"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="52685"/>
+		</Entity>
+		<Entity uid="115">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="565.39972" z="1099.25831"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="13690"/>
+		</Entity>
+		<Entity uid="116">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="553.23621" z="1088.02222"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="45781"/>
+		</Entity>
+		<Entity uid="117">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="735.76484" z="1122.1095"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="48136"/>
+		</Entity>
+		<Entity uid="118">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="741.53071" z="1134.43177"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="15423"/>
+		</Entity>
+		<Entity uid="119">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="744.98395" z="1151.12867"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="28807"/>
+		</Entity>
+		<Entity uid="120">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="756.03315" z="1121.17127"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="28807"/>
+		</Entity>
+		<Entity uid="121">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="730.62586" z="1109.66944"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="52685"/>
+		</Entity>
+		<Entity uid="122">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="585.4148" z="1086.29603"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="52685"/>
+		</Entity>
+		<Entity uid="123">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="726.86194" z="1140.03882"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="13690"/>
+		</Entity>
+		<Entity uid="124">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="714.69843" z="1128.80274"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="45781"/>
+		</Entity>
+		<Entity uid="125">
+			<Template>gaia/fauna_crocodile_nile</Template>
+			<Player>0</Player>
+			<Position x="629.8266" z="1286.78992"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="62285"/>
+		</Entity>
+		<Entity uid="126">
+			<Template>gaia/fauna_crocodile_nile</Template>
+			<Player>0</Player>
+			<Position x="623.52833" z="1272.59986"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="6380"/>
+		</Entity>
+		<Entity uid="127">
+			<Template>gaia/fauna_crocodile_nile</Template>
+			<Player>0</Player>
+			<Position x="634.00611" z="1275.75391"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="6380"/>
+		</Entity>
+		<Entity uid="128">
+			<Template>gaia/fauna_crocodile_nile</Template>
+			<Player>0</Player>
+			<Position x="630.47626" z="1259.44202"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13285"/>
+		</Entity>
+		<Entity uid="129">
+			<Template>gaia/fauna_crocodile_nile</Template>
+			<Player>0</Player>
+			<Position x="650.93775" z="1276.1084"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13285"/>
+		</Entity>
+		<Entity uid="130">
+			<Template>gaia/fauna_crocodile_nile</Template>
+			<Player>0</Player>
+			<Position x="648.96583" z="1257.91407"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="23443"/>
+		</Entity>
+		<Entity uid="131">
+			<Template>gaia/fauna_crocodile_nile</Template>
+			<Player>0</Player>
+			<Position x="723.55317" z="1268.0879"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="23443"/>
+		</Entity>
+		<Entity uid="132">
+			<Template>gaia/fauna_crocodile_nile</Template>
+			<Player>0</Player>
+			<Position x="725.5251" z="1286.28223"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="13285"/>
+		</Entity>
+		<Entity uid="133">
+			<Template>gaia/fauna_crocodile_nile</Template>
+			<Player>0</Player>
+			<Position x="705.0636" z="1269.61585"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="13285"/>
+		</Entity>
+		<Entity uid="134">
+			<Template>gaia/fauna_crocodile_nile</Template>
+			<Player>0</Player>
+			<Position x="708.59345" z="1285.92774"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="6380"/>
+		</Entity>
+		<Entity uid="135">
+			<Template>gaia/fauna_crocodile_nile</Template>
+			<Player>0</Player>
+			<Position x="698.11567" z="1282.77369"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="6380"/>
+		</Entity>
+		<Entity uid="136">
+			<Template>gaia/fauna_crocodile_nile</Template>
+			<Player>0</Player>
+			<Position x="704.41395" z="1296.96375"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="62285"/>
+		</Entity>
+		<Entity uid="137">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="421.97272" z="1104.20362"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="52685"/>
+		</Entity>
+		<Entity uid="138">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="389.79413" z="1105.92981"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="45781"/>
+		</Entity>
+		<Entity uid="139">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="401.95765" z="1117.1659"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="13690"/>
+		</Entity>
+		<Entity uid="140">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="397.55591" z="1078.10596"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="52685"/>
+		</Entity>
+		<Entity uid="141">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="405.72156" z="1086.79651"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="52685"/>
+		</Entity>
+		<Entity uid="142">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="416.62641" z="1111.55884"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="15423"/>
+		</Entity>
+		<Entity uid="143">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="410.86054" z="1099.23658"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="48136"/>
+		</Entity>
+		<Entity uid="144">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="403.48884" z="1140.21863"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="45781"/>
+		</Entity>
+		<Entity uid="145">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="411.25062" z="1112.39478"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="52685"/>
+		</Entity>
+		<Entity uid="146">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="386.08582" z="1125.69788"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="48136"/>
+		</Entity>
+		<Entity uid="147">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="391.85169" z="1138.02015"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="15423"/>
+		</Entity>
+		<Entity uid="148">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="395.30494" z="1154.71705"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="28807"/>
+		</Entity>
+		<Entity uid="149">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="406.35413" z="1124.75965"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="28807"/>
+		</Entity>
+		<Entity uid="150">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="380.94684" z="1113.25782"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="52685"/>
+		</Entity>
+		<Entity uid="151">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="372.7812" z="1104.56727"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="52685"/>
+		</Entity>
+		<Entity uid="152">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="377.18293" z="1143.6272"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="13690"/>
+		</Entity>
+		<Entity uid="153">
+			<Template>gaia/fauna_camel</Template>
+			<Player>0</Player>
+			<Position x="365.01941" z="1132.39112"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="45781"/>
+		</Entity>
+		<Entity uid="154">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="515.30854" z="1318.35364"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="61677"/>
+		</Entity>
+		<Entity uid="155">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="501.41407" z="1288.74732"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49"/>
+		</Entity>
+		<Entity uid="156">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="512.0345" z="1243.38086"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49"/>
+		</Entity>
+		<Entity uid="157">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="523.75019" z="1283.95716"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10423"/>
+		</Entity>
+		<Entity uid="158">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="558.54615" z="1286.2328"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10423"/>
+		</Entity>
+		<Entity uid="159">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="549.23273" z="1250.10303"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="61535"/>
+		</Entity>
+		<Entity uid="160">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="482.9734" z="1245.52002"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="40678"/>
+		</Entity>
+		<Entity uid="161">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="517.24549" z="1204.96277"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="32178"/>
+		</Entity>
+		<Entity uid="162">
+			<Template>gaia/fauna_elephant_african_infant</Template>
+			<Player>0</Player>
+			<Position x="533.46875" z="1255.66773"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42942"/>
+		</Entity>
+		<Entity uid="163">
+			<Template>gaia/fauna_elephant_african_infant</Template>
+			<Player>0</Player>
+			<Position x="503.36722" z="1263.62928"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42666"/>
+		</Entity>
+		<Entity uid="164">
+			<Template>gaia/fauna_elephant_african_infant</Template>
+			<Player>0</Player>
+			<Position x="539.06745" z="1302.40137"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="61938"/>
+		</Entity>
+		<Entity uid="165">
+			<Template>gaia/fauna_elephant_african_infant</Template>
+			<Player>0</Player>
+			<Position x="500.78476" z="1221.71558"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="21187"/>
+		</Entity>
+		<Entity uid="166">
+			<Template>gaia/fauna_elephant_african_infant</Template>
+			<Player>0</Player>
+			<Position x="537.03919" z="1222.09107"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="36722"/>
+		</Entity>
+		<Entity uid="167">
+			<Template>gaia/fauna_elephant_african_infant</Template>
+			<Player>0</Player>
+			<Position x="198.56931" z="1510.87452"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="36722"/>
+		</Entity>
+		<Entity uid="168">
+			<Template>gaia/fauna_elephant_african_infant</Template>
+			<Player>0</Player>
+			<Position x="162.31489" z="1510.49903"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="21187"/>
+		</Entity>
+		<Entity uid="169">
+			<Template>gaia/fauna_elephant_african_infant</Template>
+			<Player>0</Player>
+			<Position x="200.59757" z="1591.18482"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="61938"/>
+		</Entity>
+		<Entity uid="170">
+			<Template>gaia/fauna_elephant_african_infant</Template>
+			<Player>0</Player>
+			<Position x="164.89734" z="1552.41272"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="42666"/>
+		</Entity>
+		<Entity uid="171">
+			<Template>gaia/fauna_elephant_african_infant</Template>
+			<Player>0</Player>
+			<Position x="194.99888" z="1544.45118"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="42942"/>
+		</Entity>
+		<Entity uid="172">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="178.77561" z="1493.74622"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="32178"/>
+		</Entity>
+		<Entity uid="173">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="144.50351" z="1534.30347"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="40678"/>
+		</Entity>
+		<Entity uid="174">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="210.76285" z="1538.88648"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="61535"/>
+		</Entity>
+		<Entity uid="175">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="220.07627" z="1575.01624"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="10423"/>
+		</Entity>
+		<Entity uid="176">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="185.28031" z="1572.74061"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="10423"/>
+		</Entity>
+		<Entity uid="177">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="173.56461" z="1532.16431"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="49"/>
+		</Entity>
+		<Entity uid="178">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="162.94419" z="1577.53077"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="49"/>
+		</Entity>
+		<Entity uid="179">
+			<Template>gaia/fauna_elephant_african_bush</Template>
+			<Player>0</Player>
+			<Position x="176.83866" z="1607.1371"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="61677"/>
+		</Entity>
+		<Entity uid="180">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="386.75184" z="1424.63733"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="64305"/>
+		</Entity>
+		<Entity uid="181">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="393.06916" z="1414.66797"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="33545"/>
+		</Entity>
+		<Entity uid="182">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="408.06986" z="1415.93506"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="33545"/>
+		</Entity>
+		<Entity uid="183">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="395.91987" z="1432.32801"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="30453"/>
+		</Entity>
+		<Entity uid="184">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="406.92048" z="1431.06177"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="30453"/>
+		</Entity>
+		<Entity uid="185">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="399.99592" z="1423.62513"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="58647"/>
+		</Entity>
+		<Entity uid="186">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="427.07383" z="1432.74537"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="58647"/>
+		</Entity>
+		<Entity uid="187">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="433.99839" z="1440.18201"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="30453"/>
+		</Entity>
+		<Entity uid="188">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="422.99778" z="1441.44825"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="30453"/>
+		</Entity>
+		<Entity uid="189">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="435.14777" z="1425.0553"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="33545"/>
+		</Entity>
+		<Entity uid="190">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="420.14707" z="1423.78821"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="33545"/>
+		</Entity>
+		<Entity uid="191">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="413.82975" z="1433.75757"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="64305"/>
+		</Entity>
+		<Entity uid="192">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="418.40195" z="1449.92273"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="58647"/>
+		</Entity>
+		<Entity uid="193">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="425.32651" z="1457.35938"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="30453"/>
+		</Entity>
+		<Entity uid="194">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="414.3259" z="1458.62562"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="30453"/>
+		</Entity>
+		<Entity uid="195">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="426.4759" z="1442.23267"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="33545"/>
+		</Entity>
+		<Entity uid="196">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="411.4752" z="1440.96558"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="33545"/>
+		</Entity>
+		<Entity uid="197">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="405.15787" z="1450.93494"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="64305"/>
+		</Entity>
+		<Entity uid="198">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="396.40812" z="1446.48072"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="58647"/>
+		</Entity>
+		<Entity uid="199">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="403.33268" z="1453.91736"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="30453"/>
+		</Entity>
+		<Entity uid="200">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="392.33207" z="1455.1836"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="30453"/>
+		</Entity>
+		<Entity uid="201">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="404.48206" z="1438.79065"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="33545"/>
+		</Entity>
+		<Entity uid="202">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="389.48136" z="1437.52356"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="33545"/>
+		</Entity>
+		<Entity uid="203">
+			<Template>gaia/fauna_gazelle</Template>
+			<Player>0</Player>
+			<Position x="383.16404" z="1447.49292"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="64305"/>
 		</Entity>
 	</Entities>
 	<Paths/>
