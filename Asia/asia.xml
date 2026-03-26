@@ -32,8 +32,8 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="1751.41" y="394.023" z="921.568"/>
-		<Rotation angle="0.410193"/>
+		<Position x="2557.94" y="521.044" z="783.272"/>
+		<Rotation angle="-0.491762"/>
 		<Declination angle="0.610866"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
@@ -893,7 +893,7 @@
 		<Entity uid="132">
 			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
-			<Position x="275.00532" z="1847.542"/>
+			<Position x="269.05134" z="1850.57569"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="13285"/>
 		</Entity>
@@ -7305,7 +7305,7 @@
 		<Entity uid="1084">
 			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
-			<Position x="1996.18348" z="1353.28626"/>
+			<Position x="1993.12183" z="1351.45264"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30856"/>
 		</Entity>
@@ -7319,7 +7319,7 @@
 		<Entity uid="1086">
 			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
-			<Position x="2008.65674" z="1333.65491"/>
+			<Position x="2004.53345" z="1327.44495"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28639"/>
 		</Entity>
@@ -19261,7 +19261,7 @@
 		<Entity uid="2862">
 			<Template>gaia/rock/badlands_large</Template>
 			<Player>0</Player>
-			<Position x="314.61826" z="1800.15674"/>
+			<Position x="290.61405" z="1776.03638"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55133"/>
 		</Entity>
@@ -19485,7 +19485,7 @@
 		<Entity uid="2895">
 			<Template>gaia/rock/tropical_large</Template>
 			<Player>0</Player>
-			<Position x="2053.91675" z="1342.08167"/>
+			<Position x="2068.46045" z="1339.72278"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4965"/>
 		</Entity>
@@ -25092,7 +25092,7 @@
 		<Entity uid="3722">
 			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
-			<Position x="284.21949" z="1824.20057"/>
+			<Position x="282.33356" z="1821.90186"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33819"/>
 		</Entity>
@@ -31182,7 +31182,7 @@
 		<Entity uid="4601">
 			<Template>gaia/tree/teak</Template>
 			<Player>0</Player>
-			<Position x="1777.06153" z="1405.29834"/>
+			<Position x="1776.05445" z="1400.8971"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41126"/>
 		</Entity>
@@ -31196,7 +31196,7 @@
 		<Entity uid="4603">
 			<Template>gaia/tree/teak</Template>
 			<Player>0</Player>
-			<Position x="1818.09815" z="1390.66297"/>
+			<Position x="1817.16834" z="1387.45545"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38737"/>
 		</Entity>
@@ -31287,7 +31287,7 @@
 		<Entity uid="4616">
 			<Template>gaia/tree/teak</Template>
 			<Player>0</Player>
-			<Position x="1706.32483" z="1436.82288"/>
+			<Position x="1709.547" z="1427.13636"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6140"/>
 		</Entity>
@@ -31931,7 +31931,7 @@
 		<Entity uid="4709">
 			<Template>gaia/tree/date_palm</Template>
 			<Player>0</Player>
-			<Position x="1468.69178" z="1623.00831"/>
+			<Position x="1469.66041" z="1610.95826"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21231"/>
 		</Entity>
@@ -32463,7 +32463,7 @@
 		<Entity uid="4786">
 			<Template>gaia/tree/bamboo_dragon</Template>
 			<Player>0</Player>
-			<Position x="1953.38672" z="1365.74244"/>
+			<Position x="1979.51807" z="1358.86524"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30256"/>
 		</Entity>
@@ -32484,7 +32484,7 @@
 		<Entity uid="4789">
 			<Template>gaia/tree/bamboo_dragon</Template>
 			<Player>0</Player>
-			<Position x="1986.68226" z="1362.40784"/>
+			<Position x="1992.7721" z="1352.74097"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10886"/>
 		</Entity>
@@ -32505,16 +32505,9 @@
 		<Entity uid="4792">
 			<Template>gaia/tree/bamboo_dragon</Template>
 			<Player>0</Player>
-			<Position x="2004.81275" z="1349.64246"/>
+			<Position x="2005.14002" z="1332.04773"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9101"/>
-		</Entity>
-		<Entity uid="4793">
-			<Template>gaia/tree/bamboo_dragon</Template>
-			<Player>0</Player>
-			<Position x="2012.29102" z="1338.75196"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="19639"/>
 		</Entity>
 		<Entity uid="4794">
 			<Template>gaia/tree/bamboo_dragon</Template>
@@ -32547,14 +32540,14 @@
 		<Entity uid="4798">
 			<Template>gaia/tree/bamboo_dragon</Template>
 			<Player>0</Player>
-			<Position x="2015.84937" z="1322.9137"/>
+			<Position x="2013.70691" z="1321.51539"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62516"/>
 		</Entity>
 		<Entity uid="4799">
 			<Template>gaia/tree/bamboo_dragon</Template>
 			<Player>0</Player>
-			<Position x="2022.71424" z="1313.97278"/>
+			<Position x="2020.41626" z="1311.44385"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62516"/>
 		</Entity>
@@ -32582,7 +32575,7 @@
 		<Entity uid="4803">
 			<Template>gaia/tree/bamboo_dragon</Template>
 			<Player>0</Player>
-			<Position x="2022.80945" z="1302.47315"/>
+			<Position x="2020.50782" z="1300.37378"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44964"/>
 		</Entity>
