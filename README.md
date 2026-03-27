@@ -1,56 +1,14 @@
 # Continental Maps for 0 A.D.
-
-## North and Central America
-
-![](./images/North%20America/screenshot0001.png)
-
-Each player near the ocean has a dock.
-The map has four main biomes:
-    
-1. Polar in the North, corresponding to Canada and North of USA;
-2. Temperate in the Center, corresponding to East cost, and central part of USA;
-3. Desertic in the South, corresponding to Mexic and South-West of USA;
-4. Tropical in Florida, Yucatan peninsula and Cuba island.
-
-A civic center can be build on Yucatan and Cuba, while you can't on Ande and Appalacchia mountains.
-
-## South America
-
-![](./images/South%20America/screenshot0002.png)
-
-Each player near the ocean has a dock.
-The map has four main biomes:
-    
-1. Subtropical in the North and South of Amazon rainforest, corresponding to South of Brazil and North of the continent;
-2. Tropical in the Amazon rainforest, corresponding to North of Brazil and Perù;
-3. Desertic in the South, corresponding to Argentina and North of Chile;
-4. Temperate in South of Chile.
-
-There are the main river of South America, such Rio of Amazzones. Sadly, due to limitation of the game engine the water level is standard so the river looks like a canyon.
-
-It's possible to access to Pacific Ocean through Chile.
+## Index
+- [North and Central America](./docs/North_America.md)
+- [South America](./docs/South_America.md)
+- [World](./docs/World.md)
+- [Guide](#guide-to-create-real-world-heightmap-maps-for-0-ad)
 
 
-## World
+## Guide to Create Real-World Heightmap Maps for 0 A.D.
 
-It was a <b>really really big work</b> and obviously the Earth is deformed, more strongly to the poles, but I used a [sinusoidal projection](https://en.wikipedia.org/wiki/Sinusoidal_projection) to preserve the area of the continents. 
-
-<i>Pay attention: to give more important to inhabited continents I changed a bit the projection and removed the Earth poles.</i>
-
-![](./images/World/screenshot0021.png)
-
-This is my most ambitious project and I was almost loyal to real biomes. It's impossible to list them all. I based my work on this map: 
-
-![](./images/World/Vegetation.png)
-
-<i> Source: [Wikipedia](https://en.wikipedia.org/wiki/Biome#/media/File:Vegetation.png) </i>
-
-There are lots of resources and maybe too much trees, but I created this map to be rich and create epic battles.
-
-
-# Creating Real-World Heightmap Maps for 0 A.D.
-
-## Prerequisites
+### Prerequisites
 
 Make sure you have the following tools installed before starting:
 
@@ -60,9 +18,8 @@ Make sure you have the following tools installed before starting:
 
 No GIS or cartography experience is required, but familiarity with GIMP's basic interface is assumed.
 
----
 
-## Step 1 — Capture the Heightmap with Tangram Heightmapper
+### Step 1 — Capture the Heightmap with Tangram Heightmapper
 
 1. Open [Tangram Heightmapper](https://tangrams.github.io/heightmapper/) in any modern browser.
 2. Open **DevTools** (`F12` or `Ctrl+Shift+I`), then switch to **mobile emulation mode** (the device icon in the toolbar). <br>
@@ -75,9 +32,8 @@ In **Firefox** you can directlty open mobile mode with `Ctrl+Shift+M`.
 
 > **Naming tip:** Name the file using the format `scale_lat_lon` (e.g. `4_44.5_12.3`). These values are visible in the URL, so you can always reproduce the exact same export later.
 
----
 
-## Step 2 — Rescale to 1024 × 1024 in GIMP
+### Step 2 — Rescale to 1024 × 1024 in GIMP
 
 0 A.D. heightmaps work best at 1024 × 1024. Downscaling with cubic interpolation preserves terrain detail well.
 
@@ -87,13 +43,12 @@ In **Firefox** you can directlty open mobile mode with `Ctrl+Shift+M`.
 4. Set the interpolation method to **Cubic**.
 5. Click **Scale**.
 
----
 
-## Step 3 — Adjust the Elevation Curve
+### Step 3 — Adjust the Elevation Curve
 
 Raw heightmapper exports tend to have very dark low-elevation areas, which makes coastlines nearly flat and difficult to work with in-game. On the other mountains are too high and. The goal here is to lift the dark tones (low elevations) and drop light one (too high mountains), using a square-root-based curve.
 
-### Target curve formula
+#### Target curve formula
 
 The desired remapping for pixel intensity is:
 
@@ -127,9 +82,8 @@ Where `x` is the input brightness (0–255) and `y` is the output brightness (0�
 
 > **Why this matters:** The darkest pixels represent sea floor. If they stay near zero, the coastline will be too flat and units won't be able to navigate near shore. Lifting them ensures the coast has enough elevation relief for docks and port structures.
 
----
 
-## Step 4 — Soften the Coastline for Port Placement
+### Step 4 — Soften the Coastline for Port Placement
 
 The sea-coast boundary is usually a sharp edge after the curve adjustment. To make it buildable (especially for docks), you need to slightly lower the coastal pixels so they blend smoothly into the terrain.
 
@@ -146,9 +100,8 @@ This reduces the brightness of the coastal band to 75% of its current value, cre
 
 5. Deselect (`Select → None` or `Shift+Ctrl+A`).
 
----
 
-## Step 5 — Apply Gaussian Blur for Terrain Smoothness
+### Step 5 — Apply Gaussian Blur for Terrain Smoothness
 
 Real terrain is never pixel-sharp. A light blur reduces jagged heightmap artifacts and makes the final in-game terrain look natural.
 
@@ -159,9 +112,8 @@ Real terrain is never pixel-sharp. A light blur reduces jagged heightmap artifac
 
 > This step also smooths out any hard edges introduced by the curve adjustments in the previous steps.
 
----
 
-## Next Steps
+### Next Steps
 
 Once you have the final processed PNG:
 
@@ -170,7 +122,7 @@ Once you have the final processed PNG:
 - Adjust water level in Atlas to match the elevation floor you established with the curve.
 
 
-## Tips
+### Tips
 
 - **Reproduce any map:** Because you named the file with scale, latitude, and longitude from the Heightmapper URL, you can always go back and re-export the same region at a different scale or with different processing settings.
 - **Coastal detail:** The 3-pixel coast selection in Step 4 is a minimum. For maps with complex coastlines (fjords, islands, deltas), consider growing by 5–6 pixels instead.
