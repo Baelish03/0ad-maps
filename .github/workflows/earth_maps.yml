@@ -12,7 +12,7 @@ on:
 
 env:
   MOD_NAME: earth_maps
-  MOD_PATH: /earth_maps
+  MOD_PATH: ./earth_maps/
   
 
 jobs:
