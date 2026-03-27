@@ -32,8 +32,8 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="164.827" y="578.567" z="2732.45"/>
-		<Rotation angle="0.457954"/>
+		<Position x="3036.95" y="1043.46" z="1010.5"/>
+		<Rotation angle="-0.174589"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
@@ -46,7 +46,6 @@
   "LockTeams": false,
   "Name": "Asia",
   "PlayerData": [
-    null,
     {},
     {},
     {},
@@ -144,7 +143,7 @@
 		<Entity uid="22">
 			<Template>skirmish/units/default_cavalry</Template>
 			<Player>6</Player>
-			<Position x="3166.06885" z="2430.66626"/>
+			<Position x="3167.85914" z="2428.00684"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40025"/>
 		</Entity>
@@ -515,56 +514,56 @@
 		<Entity uid="77">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>6</Player>
-			<Position x="3173.06983" z="2433.95386"/>
+			<Position x="3174.38282" z="2432.73243"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25052"/>
 		</Entity>
 		<Entity uid="78">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>6</Player>
-			<Position x="3176.8191" z="2438.2212"/>
+			<Position x="3178.13209" z="2436.99976"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5294"/>
 		</Entity>
 		<Entity uid="79">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>6</Player>
-			<Position x="3181.52271" z="2443.01636"/>
+			<Position x="3182.8357" z="2441.79493"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23382"/>
 		</Entity>
 		<Entity uid="80">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>6</Player>
-			<Position x="3185.65162" z="2447.96534"/>
+			<Position x="3186.9646" z="2446.7439"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10174"/>
 		</Entity>
 		<Entity uid="81">
 			<Template>skirmish/units/default_support_civilian</Template>
 			<Player>6</Player>
-			<Position x="3144.00586" z="2447.56641"/>
+			<Position x="3145.10743" z="2446.33057"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54912"/>
 		</Entity>
 		<Entity uid="82">
 			<Template>skirmish/units/default_support_civilian</Template>
 			<Player>6</Player>
-			<Position x="3153.0232" z="2440.86158"/>
+			<Position x="3151.74122" z="2441.06739"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14054"/>
 		</Entity>
 		<Entity uid="83">
 			<Template>skirmish/units/default_support_civilian</Template>
 			<Player>6</Player>
-			<Position x="3156.98658" z="2437.83765"/>
+			<Position x="3156.44361" z="2437.41187"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41220"/>
 		</Entity>
 		<Entity uid="84">
 			<Template>skirmish/units/default_support_civilian</Template>
 			<Player>6</Player>
-			<Position x="3161.3064" z="2434.15186"/>
+			<Position x="3160.84278" z="2433.84156"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54367"/>
 		</Entity>

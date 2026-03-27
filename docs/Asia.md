@@ -1,5 +1,7 @@
 ## Asia
 
+![](../images/Asia/screenshot0005.png)
+
 This map has 1024x1024 size. The first step was to add rivers correctly without geo-reference. I used this guide:
 
 ![](../images/Asia/rivers.png)
