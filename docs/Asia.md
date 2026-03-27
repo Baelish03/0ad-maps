@@ -6,7 +6,7 @@ This map has 1024x1024 size. The first step was to add rivers correctly without 
 
 ![](../images/Asia/rivers.png)
 
-To make the map strategically more captivating, rivers aren't crossable, but there are some bridges.
+Rivers are intentionally not crossable to make the map strategically more captivating so there are some bridges that are strategically pivotal.
 
 As always, I try to stay loyal to real geography, so I used this map for a crude first step:
 
@@ -57,7 +57,7 @@ I used ClaudeAI for flora and fauna. I sent screenshot of available entities in 
     - fauna_peacock
     - fauna_cattle_zebu / fauna_cattle_zebu_trainable
     - fauna_horse_marwari
-    - fauna_crocodile_nile (indian rivers)
+    - fauna_crocodile_nile (indian rivers with license)
     - fauna_pig
     - fauna_chicken
     - fauna_shark / fauna_whale_fin
@@ -76,7 +76,7 @@ I used ClaudeAI for flora and fauna. I sent screenshot of available entities in 
 - Asiatic South-East (Vietnam, Myanmar, Indonesia)
     - fauna_elephant_asian / fauna_elephant_asian_infant
     - fauna_tiger
-    - fauna_crocodile_nile
+    - fauna_crocodile_nile (license)
     - fauna_pig / fauna_pig_flaming / fauna_piglet
     - fauna_chicken
     - fauna_shark / fauna_whale_fin
@@ -84,7 +84,7 @@ I used ClaudeAI for flora and fauna. I sent screenshot of available entities in 
 - Siberia / North Asia
     - fauna_wolf / fauna_wolf_arctic
     - fauna_bear_brown
-    - fauna_bear_polar (coste artiche)
+    - fauna_bear_polar (artic coastes)
     - fauna_walrus
     - fauna_muskox
     - fauna_rabbit
@@ -198,7 +198,6 @@ I used ClaudeAI for flora and fauna. I sent screenshot of available entities in 
     - tree/date_palm / tree/date_palm_dead
     - tree/oak / tree/oak_large
     - tree/temperate
-    - tree/temperate / tree/temperate_autumn
     - tree/euro_birch
     - tree/maple
     - tree/elm
