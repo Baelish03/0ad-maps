@@ -24,14 +24,15 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - uses: 0ad-matters/gh-action-build-pyromod@v2
-      with: ${{ env.MOD_PATH }}
+      with: 
         name: ${{ env.MOD_NAME }}
         version: ${{ env.MOD_VERSION }}
+        directory: ${{ env.MOD_PATH }}
       id: build-pyromod
     - name: Upload Artifacts
       # Uploads artifacts (combined into a zip file) to the workflow output page
       uses: actions/upload-artifact@v3
-      with: ${{ env.MOD_PATH }}
+      with:
         name: ${{ env.MOD_NAME }}-${{ env.MOD_VERSION }}
         path: "output/${{ env.MOD_NAME }}*.*"
 
@@ -46,9 +47,10 @@ jobs:
       run: |
         echo "MOD_VERSION=${MOD_VERSION:1}" >> $GITHUB_ENV
     - uses:  0ad-matters/gh-action-build-pyromod@v2
-      with: ${{ env.MOD_PATH }}
+      with:
         name: ${{ env.MOD_NAME }}
         version: ${{ env.MOD_VERSION }}
+        directory: ${{ env.MOD_PATH }}
       id: build-pyromod
     - name: Create sha256sum
       run:  |
@@ -57,7 +59,7 @@ jobs:
         sha256sum $OUTPUT_FILE > $OUTPUT_FILE.sha256sum
     - name: Release PyroMod
       uses: ncipollo/release-action@v1
-      with: ${{ env.MOD_PATH }}
+      with:
         allowUpdates: True
         prerelease: False
         artifacts: "output/${{ env.MOD_NAME }}*.*"

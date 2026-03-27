@@ -8,15 +8,15 @@ This map has 1024x1024 size. The first step was to add rivers correctly without 
 
 Rivers are intentionally not crossable to make the map strategically more captivating so there are some bridges that are strategically pivotal.
 
-As always, I try to stay loyal to real geography, so I used this map for a crude first step:
+For biome assignment I started from a coarse reference map:
 
 ![](../images/Asia/biomes.webp)
 
-and the I refine it with Koppen-Geiger classification.
+and then I refined it zone by zone with Koppen-Geiger classification:
 
 ![](../images/Asia/Koppen-Geiger_Map_v2_Asia_1991–2020.svg)
 
-I used ClaudeAI for flora and fauna. I sent screenshot of available entities in the game and it returned best choice for each biome and zone. 
+For fauna and flora, I used Claude AI as a lookup tool: I sent screenshots of the entities available in the game and asked it to match them to each biome and region. The results below reflect that process, with occasional liberties where the asset library has no close equivalent.
 
 ### Fauna
 - Arabian peninsula
