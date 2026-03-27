@@ -3,6 +3,7 @@
 - [North and Central America](./docs/North_America.md)
 - [South America](./docs/South_America.md)
 - [World](./docs/World.md)
+- [Asia](./docs/Asia.md)
 - [Guide](#guide-to-create-real-world-heightmap-maps-for-0-ad)
 
 
