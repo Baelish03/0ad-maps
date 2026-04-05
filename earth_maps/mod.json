@@ -1,7 +1,9 @@
 {
-    "name": "earth_maps",
+    "name": "earth-maps",
+	"version": "0.28.2",
     "label": "Continental Maps for 0 A.D.",
+    "url": "https://github.com/Baelish03/0ad-maps",
+    "ignoreInCompatibilityChecks": true,
     "description": "Maps of some earth continents for 0 A.D.: North and South America, Asia and World",
-    "dependencies": ["0ad=0.28.0"],
-	"version": "0.28.1"
+    "dependencies": ["0ad>=0.28.0"]
 }
