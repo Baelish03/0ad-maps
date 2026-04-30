@@ -1,0 +1,15 @@
+{
+	"settings": {
+		"Name": "Calabria",
+		"Script": "calabria.js",
+		"Description": "Calabria (Roman Calabria, modern Salento) The heel of Italy's boot, a sun-scorched peninsula jutting into the Mediterranean between the Adriatic and Ionian seas. Home to the Messapians and shaped by Greek colonization, this land of olive groves, limestone cliffs, and ancient ports was the gateway to the East.",
+		"Keywords": [
+			"naval",
+			"new",
+			"medit",
+			"italy"
+		],
+		"Preview": "calabria.png",
+		"CircularMap": true
+	}
+}
