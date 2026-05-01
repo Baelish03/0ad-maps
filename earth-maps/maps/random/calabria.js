@@ -95,11 +95,36 @@ export function* generateMap(mapSettings) {
 	}
 	yield 40;
 
+	if (!mapSettings.Nomad) {
+		g_Map.log("Finding player positions");
+
+		const { playerIDs, playerPosition } = playerPlacementRandom(
+			sortAllPlayers(),
+			[
+				avoidClasses(g_TileClasses.mountain, 5),
+				stayClasses(g_TileClasses.land, scaleByMapSize(8, 25))
+			]);
+
+		g_Map.log("Flatten the initial CC area and placing playerbases");
+		for (let i = 0; i < getNumPlayers(); ++i) {
+			g_Map.logger.printDuration();
+			setBiome(climateZones.find(zone => zone.tileClass.has(playerPosition[i])).biome);
+
+			createArea(
+				new ClumpPlacer(diskArea(defaultPlayerBaseRadius() * 0.8), 0.95, 0.6, Infinity,
+					playerPosition[i]),
+				new SmoothElevationPainter(ELEVATION_SET, g_Map.getHeight(playerPosition[i]), 6));
+
+			createBase(playerIDs[i], playerPosition[i], mapSize >= 384);
+		}
+	}
+	yield 50;
+
 	g_Map.log("Placing olive trees");
-	const num = scaleByMapSize(30, 120);
+	const num = scaleByMapSize(25, 100);
 	createObjectGroups(
 		new SimpleGroup(
-			[new SimpleObject("gaia/tree/olive", 2, 5, 1, 4)],
+			[new SimpleObject("gaia/tree/olive", 10, 25, 3, 6)],
 			true,
 			g_TileClasses.forest
 		),
@@ -135,32 +160,7 @@ export function* generateMap(mapSettings) {
 		],
 		scaleByMapSize(4, 12)
 	);
-	yield 50;
-
-	if (!mapSettings.Nomad) {
-		g_Map.log("Finding player positions");
-
-		const { playerIDs, playerPosition } = playerPlacementRandom(
-			sortAllPlayers(),
-			[
-				avoidClasses(g_TileClasses.mountain, 5),
-				stayClasses(g_TileClasses.land, scaleByMapSize(8, 25))
-			]);
-
-		g_Map.log("Flatten the initial CC area and placing playerbases");
-		for (let i = 0; i < getNumPlayers(); ++i) {
-			g_Map.logger.printDuration();
-			setBiome(climateZones.find(zone => zone.tileClass.has(playerPosition[i])).biome);
-
-			createArea(
-				new ClumpPlacer(diskArea(defaultPlayerBaseRadius() * 0.8), 0.95, 0.6, Infinity,
-					playerPosition[i]),
-				new SmoothElevationPainter(ELEVATION_SET, g_Map.getHeight(playerPosition[i]), 6));
-
-			createBase(playerIDs[i], playerPosition[i], mapSize >= 384);
-		}
-	}
-	yield 50;
+	yield 60;
 
 	for (const zone of climateZones) {
 		setBiome(zone.biome);
@@ -228,7 +228,7 @@ export function* generateMap(mapSettings) {
 				"func": addForests,
 				"avoid": [
 					g_TileClasses.berries, 3,
-					g_TileClasses.forest, 15,
+					g_TileClasses.forest, 10,
 					g_TileClasses.metal, 3,
 					g_TileClasses.mountain, 2,
 					g_TileClasses.player, 12,
@@ -238,7 +238,7 @@ export function* generateMap(mapSettings) {
 				"stay": [zone.tileClass, 0],
 				"sizes": ["normal"],
 				"mixes": ["normal"],
-				"amounts": ["normal"]
+				"amounts": ["many"]
 			},
 			{
 				"func": addSmallMetal,
@@ -286,7 +286,7 @@ export function* generateMap(mapSettings) {
 				"stay": [zone.tileClass, 0],
 				"sizes": ["normal"],
 				"mixes": ["normal"],
-				"amounts": ["many"]
+				"amounts": ["some"]
 			},
 			{
 				"func": addAnimals,
@@ -302,7 +302,7 @@ export function* generateMap(mapSettings) {
 				"stay": [zone.tileClass, 0],
 				"sizes": ["small"],
 				"mixes": ["normal"],
-				"amounts": ["tons"]
+				"amounts": ["many"]
 			},
 			{
 				"func": addStragglerTrees,
@@ -318,7 +318,7 @@ export function* generateMap(mapSettings) {
 				"stay": [zone.tileClass, 0],
 				"sizes": ["normal"],
 				"mixes": ["normal"],
-				"amounts": ["some"]
+				"amounts": ["few"]
 			},
 			{
 				"func": addLayeredPatches,
@@ -345,18 +345,18 @@ export function* generateMap(mapSettings) {
 				"stay": [zone.tileClass, 0],
 				"sizes": ["small"],
 				"mixes": ["same"],
-				"amounts": ["normal"]
+				"amounts": ["tons"]
 			}
 		]);
 	}
-	yield 60;
+	yield 70;
 
 	g_Map.log("Painting water");
 	createArea(
 		new MapBoundsPlacer(),
 		new TerrainPainter(tWater),
 		new HeightConstraint(-Infinity, heightWaterLevel));
-	yield 70;
+	yield 80;
 
 	g_Map.log("Placing fish");
 	g_Gaia.fish = "gaia/fish/generic";
