@@ -4,6 +4,8 @@
 - [South America](./docs/South_America.md)
 - [World](./docs/World.md)
 - [Asia](./docs/Asia.md)
+- [Salento](./docs/Tamriel.md)
+- [Tamriel](./docs/Tamriel.md)
 - [Guide](#guide-to-create-real-world-heightmap-maps-for-0-ad)
 
 
