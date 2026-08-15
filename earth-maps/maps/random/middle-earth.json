@@ -1,0 +1,10 @@
+{
+	"settings" : {
+		"Name" : "Middle Earth",
+		"Script" : "middle-earth.js",
+		"Description" : "",
+		"Keywords": ["naval", "continental", "new", "middle earth", "the lord of the rings", "tltr"],
+		"Preview" : "middle-earth.png",
+		"CircularMap" : false
+	}
+}
