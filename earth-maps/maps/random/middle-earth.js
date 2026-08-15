@@ -17,204 +17,74 @@ export function* generateMap(mapSettings) {
 
 	const heightScale = num => num * mapSettings.Size / 320;
 
-	const heightSeaGround = heightScale(-5);
+	const heightSeaGround = heightScale(-6);
 	const heightWaterLevel = heightScale(2);
 	const heightShoreline = heightScale(2);
-	const heightSnow = heightScale(135);
+	const heightSnow = heightScale(35);
 
 	globalThis.g_Map = new RandomMap(heightWaterLevel, g_Terrains.mainTerrain);
 	const mapSize = g_Map.getSize();
 	const mapCenter = g_Map.getCenter();
 	const mapBounds = g_Map.getBounds();
 
-	g_Map.LoadHeightmapImage("middle-earth.png", -15, 200);
+	g_Map.LoadHeightmapImage("middle-earth.png", -40, 55);
 	yield 15;
 
 	initTileClasses([
 		"shoreline",
 
-		"all",
-
-		"NorthSkyrim",
-		"SouthSkyrim",
-		"NorthHighRock",
-		"SouthHighRock",
-		"Hammerfell",
-		"WestCyrodiil",
-		"EastCyrodiil",
-		"Summerset_Valenwood_Argonia_SouthElsweyr",
-		"Elsweyr",
-		"Cyrodiil_Morrowind_mountains",
-		"NorthVvardenfell",
-		"CenterVvardenfell",
-		"WestMorrowind",
-		"EastMorrowind",
-		"NorthMorrowind",
-		"Argonia_Morrowind"
+		"Forodwaith",
+		"Angmar",
+		"Contea",
+		"Contea_Lorien",
+		"Lorien"
 	]);
 
-	/*
-	const NorthSkyrimTL = new Vector2D(fractionToTiles(.35), mapBounds.top);
-	const NorthSkyrimBR = new Vector2D(fractionToTiles(.73), fractionToTiles(.6));
+	const ForodwaithLT = new Vector2D(mapBounds.left, mapBounds.top);
+	const ForodwaithRB = new Vector2D(mapBounds.right, fractionToTiles(1 - .125));
 
-	const SouthSkyrimTL = new Vector2D(fractionToTiles(.3), NorthSkyrimBR.y);
-	const SouthSkyrimBR = new Vector2D(fractionToTiles(.67), fractionToTiles(.5));
+	const AngmarLT = new Vector2D(mapBounds.left, ForodwaithRB.y);
+	const AngmarRB = new Vector2D(mapBounds.right, fractionToTiles(1 - .2));
 
-	const NorthHighRockTL = new Vector2D(mapBounds.left, mapBounds.top);
-	const NorthHighRockBR = new Vector2D(NorthSkyrimTL.x, fractionToTiles(.7));
+	const ConteaLT = new Vector2D(mapBounds.left, AngmarRB.y);
+	const ConteaRB = new Vector2D(fractionToTiles(.39), fractionToTiles(1 - .537));
 
-	const SouthHighRockTL = new Vector2D(mapBounds.left, NorthHighRockBR.y);
-	const SouthHighRockBR = new Vector2D(NorthSkyrimTL.x, fractionToTiles(.6));
+	const Contea_LorienLT = new Vector2D(ConteaRB.x, AngmarRB.y);
+	const Contea_LorienRB = new Vector2D(fractionToTiles(.464), ConteaRB.y);
 
-	const HammerfellTL = new Vector2D(mapBounds.left, SouthHighRockBR.y);
-	const HammerfellBR = new Vector2D(SouthSkyrimTL.x, fractionToTiles(.4));
 
-	const WestCyrodiilTL = new Vector2D(SouthSkyrimTL.x, SouthSkyrimBR.y);
-	const WestCyrodiilBR = new Vector2D(fractionToTiles(.45), fractionToTiles(.4));
 
-	const EastCyrodiilTL = new Vector2D(WestCyrodiilBR.x, SouthSkyrimBR.y);
-	const EastCyrodiilBR = new Vector2D(SouthSkyrimBR.x, WestCyrodiilBR.y);
-
-	const Summerset_Valenwood_Argonia_SouthElsweyrTL = new Vector2D(mapBounds.left, HammerfellBR.y);
-	const Summerset_Valenwood_Argonia_SouthElsweyrBR = new Vector2D(mapBounds.right, mapBounds.bottom);
-
-	const ElsweyrTL = new Vector2D(fractionToTiles(.45), WestCyrodiilBR.y);
-	const ElsweyrBR = new Vector2D(fractionToTiles(.55), fractionToTiles(.25));
-
-	const Cyrodiil_Morrowind_mountainsTL = new Vector2D(SouthSkyrimBR.x, NorthSkyrimBR.y);
-	const Cyrodiil_Morrowind_mountainsBR = new Vector2D(NorthSkyrimBR.x, Summerset_Valenwood_Argonia_SouthElsweyrTL.y);
-
-	const NorthVvardenfellTL = new Vector2D(NorthSkyrimBR.x, mapBounds.top);
-	const NorthVvardenfellBR = new Vector2D(mapBounds.right, fractionToTiles(.75));
-
-	const CenterVvardenfellTL = new Vector2D(NorthSkyrimBR.x, NorthVvardenfellBR.y);
-	const CenterVvardenfellBR = new Vector2D(fractionToTiles(.85), fractionToTiles(.6));
-
-	const WestMorrowindTL = new Vector2D(NorthSkyrimBR.x, CenterVvardenfellBR.y);
-	const WestMorrowindBR = new Vector2D(fractionToTiles(.8), fractionToTiles(.45));
-
-	const EastMorrowindTL = new Vector2D(WestMorrowindBR.x, CenterVvardenfellBR.y);
-	const EastMorrowindBR = new Vector2D(mapBounds.right, Summerset_Valenwood_Argonia_SouthElsweyrTL.y);
-
-	const NorthMorrowindTL = new Vector2D(CenterVvardenfellBR.x, NorthVvardenfellBR.y);
-	const NorthMorrowindBR = new Vector2D(mapBounds.right, EastMorrowindTL.y);
-
-	const Argonia_MorrowindTL = new Vector2D(NorthSkyrimBR.x, WestMorrowindBR.y);
-	const Argonia_MorrowindBR = new Vector2D(mapBounds.right, Summerset_Valenwood_Argonia_SouthElsweyrTL.y);
 
 	const climateZones = [
 		{
-			"tileClass": g_TileClasses.NorthSkyrim,
-			"position1": NorthSkyrimTL,
-			"position2": NorthSkyrimBR,
+			"tileClass": g_TileClasses.Forodwaith,
+			"position1": ForodwaithLT,
+			"position2": ForodwaithRB,
 			"biome": "generic/arctic",
 			"constraint": new NullConstraint()
 		},
 		{
-			"tileClass": g_TileClasses.SouthSkyrim,
-			"position1": SouthSkyrimTL,
-			"position2": SouthSkyrimBR,
+			"tileClass": g_TileClasses.Angmar,
+			"position1": AngmarLT,
+			"position2": AngmarRB,
 			"biome": "generic/alpine",
 			"constraint": new NullConstraint()
 		},
 		{
-			"tileClass": g_TileClasses.NorthHighRock,
-			"position1": NorthHighRockTL,
-			"position2": NorthHighRockBR,
+			"tileClass": g_TileClasses.Contea,
+			"position1": ConteaLT,
+			"position2": ConteaRB,
+			"biome": "generic/temperate",
+			"constraint": new NullConstraint()
+		},
+		{
+			"tileClass": g_TileClasses.Contea_Lorien,
+			"position1": Contea_LorienLT,
+			"position2": Contea_LorienRB,
 			"biome": "generic/alpine",
-			"constraint": new NullConstraint()
-		},
-		{
-			"tileClass": g_TileClasses.SouthHighRock,
-			"position1": SouthHighRockTL,
-			"position2": SouthHighRockBR,
-			"biome": "generic/temperate",
-			"constraint": new NullConstraint()
-		},
-		{
-			"tileClass": g_TileClasses.Hammerfell,
-			"position1": HammerfellTL,
-			"position2": HammerfellBR,
-			"biome": "generic/sahara",
-			"constraint": new NullConstraint()
-		},
-		{
-			"tileClass": g_TileClasses.WestCyrodiil,
-			"position1": WestCyrodiilTL,
-			"position2": WestCyrodiilBR,
-			"biome": "generic/aegean",
-			"constraint": new NullConstraint()
-		},
-		{
-			"tileClass": g_TileClasses.EastCyrodiil,
-			"position1": EastCyrodiilTL,
-			"position2": EastCyrodiilBR,
-			"biome": "generic/temperate",
-			"constraint": new NullConstraint()
-		},
-		{
-			"tileClass": g_TileClasses.Summerset_Valenwood_Argonia_SouthElsweyr,
-			"position1": Summerset_Valenwood_Argonia_SouthElsweyrTL,
-			"position2": Summerset_Valenwood_Argonia_SouthElsweyrBR,
-			"biome": "generic/india",
-			"constraint": new NullConstraint()
-		},
-		{
-			"tileClass": g_TileClasses.Elsweyr,
-			"position1": ElsweyrTL,
-			"position2": ElsweyrBR,
-			"biome": "generic/sahara",
-			"constraint": new NullConstraint()
-		},
-		{
-			"tileClass": g_TileClasses.Cyrodiil_Morrowind_mountains,
-			"position1": Cyrodiil_Morrowind_mountainsTL,
-			"position2": Cyrodiil_Morrowind_mountainsBR,
-			"biome": "generic/alpine",
-			"constraint": new NullConstraint()
-		},
-		{
-			"tileClass": g_TileClasses.NorthVvardenfell,
-			"position1": NorthVvardenfellTL,
-			"position2": NorthVvardenfellBR,
-			"biome": "generic/arctic",
-			"constraint": new NullConstraint()
-		},
-		{
-			"tileClass": g_TileClasses.CenterVvardenfell,
-			"position1": CenterVvardenfellTL,
-			"position2": CenterVvardenfellBR,
-			"biome": "generic/arctic",
-			"constraint": new NullConstraint()
-		},
-		{
-			"tileClass": g_TileClasses.WestMorrowind,
-			"position1": WestMorrowindTL,
-			"position2": WestMorrowindBR,
-			"biome": "generic/sahara",
-			"constraint": new NullConstraint()
-		},
-		{
-			"tileClass": g_TileClasses.EastMorrowind,
-			"position1": EastMorrowindTL,
-			"position2": EastMorrowindBR,
-			"biome": "generic/temperate",
-			"constraint": new NullConstraint()
-		},
-		{
-			"tileClass": g_TileClasses.NorthMorrowind,
-			"position1": NorthMorrowindTL,
-			"position2": NorthMorrowindBR,
-			"biome": "generic/temperate",
-			"constraint": new NullConstraint()
-		},
-		{
-			"tileClass": g_TileClasses.Argonia_Morrowind,
-			"position1": Argonia_MorrowindTL,
-			"position2": Argonia_MorrowindBR,
-			"biome": "generic/temperate",
 			"constraint": new NullConstraint()
 		}
+
 	];
 
 	g_Map.log("Lowering sea ground");
@@ -260,12 +130,6 @@ export function* generateMap(mapSettings) {
 				zone.constraint
 			]);
 	}
-
-	g_Map.log("Carving Elsweyr out of the India zone");
-	createArea(
-		new RectPlacer(ElsweyrTL, ElsweyrBR, Infinity),
-		new TileClassUnPainter(g_TileClasses.Summerset_Valenwood_Argonia_SouthElsweyr)
-	);
 	yield 40;
 
 	g_Map.log("Fuzzing biome borders");
@@ -300,8 +164,8 @@ export function* generateMap(mapSettings) {
 		const { playerIDs, playerPosition } = playerPlacementRandom(
 			sortAllPlayers(),
 			[
-				avoidClasses(g_TileClasses.mountain, 3),
-				stayClasses(g_TileClasses.land, scaleByMapSize(1, 15))
+				avoidClasses(g_TileClasses.mountain, 10),
+				stayClasses(g_TileClasses.land, scaleByMapSize(10, 25))
 			]);
 
 		g_Map.log("Flatten the initial CC area and placing playerbases");
@@ -311,7 +175,7 @@ export function* generateMap(mapSettings) {
 
 			const zone = climateZones.find(zone => zone.tileClass.has(playerPosition[i]));
 			setBiome(zone ? zone.biome : "generic/temperate"); // fallback
-			
+
 			createArea(
 				new ClumpPlacer(diskArea(defaultPlayerBaseRadius() * 0.8), 0.95, 0.6, Infinity,
 					playerPosition[i]),
@@ -579,7 +443,6 @@ export function* generateMap(mapSettings) {
 				g_TileClasses.mountain, 2)
 		]);
 
-*/
 	setWindAngle(-0.589049);
 	setWaterTint(0.556863, 0.615686, 0.643137);
 	setWaterColor(0.494118, 0.639216, 0.713726);
