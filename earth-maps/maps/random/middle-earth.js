@@ -159,7 +159,7 @@ export function* generateMap(mapSettings) {
 			"tileClass": g_TileClasses.NordHarad,
 			"position1": NordHaradLT,
 			"position2": NordHaradRB,
-			"biome": "generic/steppe",
+			"biome": "generic/savanna",
 			"constraint": new NullConstraint()
 		},
 		{
@@ -363,7 +363,7 @@ export function* generateMap(mapSettings) {
 				"stay": [zone.tileClass, 0],
 				"sizes": ["normal"],
 				"mixes": ["same"],
-				"amounts": ["few", "normal", "many"]
+				"amounts": ["normal"]
 			},
 			{
 				"func": addBerries,
@@ -517,7 +517,7 @@ export function* generateMap(mapSettings) {
 	placePlayersNomad(
 		g_Map.createTileClass(),
 		[
-			stayClasses(g_TileClasses.land, 5),
+			stayClasses(g_TileClasses.land, 15),
 			avoidClasses(
 				g_TileClasses.forest, 2,
 				g_TileClasses.rock, 4,
@@ -527,18 +527,18 @@ export function* generateMap(mapSettings) {
 				g_TileClasses.mountain, 2)
 		]);
 
-	setWindAngle(-0.589049);
-	setWaterTint(0.556863, 0.615686, 0.643137);
-	setWaterColor(0.494118, 0.639216, 0.713726);
-	setWaterWaviness(8);
+	setWindAngle(Math.PI * 3 / 2);
+	setWaterTint(84 / 256, 162 / 256, 207 / 256);
+	setWaterColor(84 / 256, 162 / 256, 207 / 256);
+	setWaterWaviness(10);
 	setWaterMurkiness(0.87);
 	setWaterType("ocean");
 
 	setAmbientColor(0.72, 0.72, 0.82);
 
 	setSunColor(0.733, 0.746, 0.574);
-	setSunRotation(Math.PI * 0.95);
-	setSunElevation(Math.PI / 6);
+	setSunRotation(Math.PI * 0);
+	setSunElevation(Math.PI / 3);
 
 	setSkySet("cumulus");
 	setFogFactor(0);
