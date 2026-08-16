@@ -8,12 +8,64 @@ Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
 Engine.LoadLibrary("rmbiome");
 
+function MordorBiome() {
+	g_Terrains.mainTerrain = ["cliff volcanic light", "ocean_rock_a", "ocean_rock_b"];
+	g_Terrains.tier1Terrain = "cliff volcanic light";
+	g_Terrains.tier2Terrain = "ocean_rock_a";
+	g_Terrains.tier3Terrain = "ocean_rock_b";
+
+	g_Terrains.cliff = ["cliff volcanic coarse", "cave_walls"];
+	g_Terrains.road = "road1";
+	g_Terrains.roadWild = "road1";
+	//g_Terrains.shoreline = "shoreline stoney a"
+
+	g_Terrains.lava1 = "LavaTest05";
+	g_Terrains.lava2 = "LavaTest04";
+	g_Terrains.lava3 = "LavaTest03";
+
+	g_Gaia.trees = ["gaia/tree/dead"];
+	g_Gaia.stoneLarge = "gaia/rock/alpine_large";
+	g_Gaia.stoneSmall = "gaia/rock/alpine_small";
+	g_Gaia.metalLarge = "gaia/ore/alpine_large";
+
+	g_Gaia.animals = ["gaia/fauna_goat", "gaia/fauna_chamelon", "gaia/fauna_pig"];
+
+	/*g_Terrains.mainTerrain = "savanna_grass_a";
+	g_Terrains.tier1Terrain = "savanna_grass_b";
+	g_Terrains.tier2Terrain = "savanna_dirt_a";
+	g_Terrains.tier3Terrain = "savanna_dirt_b";
+	g_Terrains.cliff = "savanna_cliff_a";
+	g_Terrains.shore = "savanna_shoreline_a";
+
+	g_Gaia.trees = ["gaia/tree/baobab", "gaia/tree/acacia"];
+	g_Gaia.animals = ["gaia/fauna_zebra", "gaia/fauna_elephant_african"];
+	g_Gaia.fruitBush = "gaia/fruit/berry_bush";*/
+
+	/*
+	const tGrass = ["cliff volcanic light", "ocean_rock_a", "ocean_rock_b"];
+	const tGrassA = "cliff volcanic light";
+	const tGrassB = "ocean_rock_a";
+	const tGrassC = "ocean_rock_b";
+	const tCliff = ["cliff volcanic coarse", "cave_walls"];
+	const tRoad = "road1";
+	const tRoadWild = "road1";
+	const tLava1 = "LavaTest05";
+	const tLava2 = "LavaTest04";
+	const tLava3 = "LavaTest03";
+
+	const oTree = "gaia/tree/dead";
+	const oStoneLarge = "gaia/rock/alpine_large";
+	const oStoneSmall = "gaia/rock/alpine_small";
+	const oMetalLarge = "gaia/ore/alpine_large";
+	*/
+}
+
 export function* generateMap(mapSettings) {
 	TILE_CENTERED_HEIGHT_MAP = true;
 
 	const tWater = "medit_sand_wet";
 	const tSnowedRocks = ["alpine_rock_02_snow", "path a"];
-	setBiome("generic/temperate");
+	setBiome("generic/steppe");
 
 	const heightScale = num => num * mapSettings.Size / 320;
 
@@ -145,7 +197,7 @@ export function* generateMap(mapSettings) {
 			"tileClass": g_TileClasses.Mordor,
 			"position1": MordorLT,
 			"position2": MordorRB,
-			"biome": "generic/sahara",
+			"biome": "mordor",
 			"constraint": new NullConstraint()
 		},
 		{
@@ -200,7 +252,12 @@ export function* generateMap(mapSettings) {
 
 	g_Map.log("Marking climate zones");
 	for (const zone of climateZones) {
-		setBiome(zone.biome);
+		if (zone.biome === "mordor") {
+			MordorBiome();
+		} else {
+			setBiome(zone.biome);
+		}
+
 		createArea(
 			new RectPlacer(zone.position1, zone.position2, Infinity),
 			new TileClassPainter(zone.tileClass),
@@ -218,7 +275,11 @@ export function* generateMap(mapSettings) {
 
 	g_Map.log("Fuzzing biome borders");
 	for (const zone of climateZones) {
-		setBiome(zone.biome);
+		if (zone.biome === "mordor") {
+			MordorBiome();
+		} else {
+			setBiome(zone.biome);
+		}
 
 		createLayeredPatches(
 			// 3, 6, 5, 10, 8, 21
@@ -258,7 +319,7 @@ export function* generateMap(mapSettings) {
 
 
 			const zone = climateZones.find(zone => zone.tileClass.has(playerPosition[i]));
-			setBiome(zone ? zone.biome : "generic/temperate"); // fallback
+			//setBiome(zone ? zone.biome : "generic/temperate"); // fallback
 
 			createArea(
 				new ClumpPlacer(diskArea(defaultPlayerBaseRadius() * 0.8), 0.95, 0.6, Infinity,
@@ -271,7 +332,11 @@ export function* generateMap(mapSettings) {
 	yield 50;
 
 	for (const zone of climateZones) {
-		setBiome(zone.biome);
+		if (zone.biome === "mordor") {
+			MordorBiome();
+		} else {
+			setBiome(zone.biome);
+		}
 
 		g_Map.log("Painting shoreline");
 		createArea(
