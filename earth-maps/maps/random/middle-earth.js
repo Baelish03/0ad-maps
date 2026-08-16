@@ -37,7 +37,14 @@ export function* generateMap(mapSettings) {
 		"Angmar",
 		"Contea",
 		"Contea_Lorien",
-		"Lorien"
+		"Lorien",
+		"Rhun",
+		"Rohan",
+		"Gondor",
+		"Mordor",
+		"EstMordor",
+		"NordHarad",
+		"Harad"
 	]);
 
 	const ForodwaithLT = new Vector2D(mapBounds.left, mapBounds.top);
@@ -52,7 +59,29 @@ export function* generateMap(mapSettings) {
 	const Contea_LorienLT = new Vector2D(ConteaRB.x, AngmarRB.y);
 	const Contea_LorienRB = new Vector2D(fractionToTiles(.464), ConteaRB.y);
 
+	const LorienLT = new Vector2D(Contea_LorienRB.x, AngmarRB.y);
+	const LorienRB = new Vector2D(fractionToTiles(.707), fractionToTiles(1 - .388));
 
+	const RhunLT = new Vector2D(LorienRB.x, AngmarRB.y);
+	const RhunRB = new Vector2D(mapBounds.right, LorienRB.y);
+
+	const RohanLT = new Vector2D(Contea_LorienRB.x, LorienRB.y);
+	const RohanRB = new Vector2D(mapBounds.right, Contea_LorienRB.y);
+
+	const GondorLT = new Vector2D(mapBounds.left, ConteaRB.y);
+	const GondorRB = new Vector2D(fractionToTiles(.591), fractionToTiles(1 - .725));
+
+	const MordorLT = new Vector2D(GondorRB.x, ConteaRB.y);
+	const MordorRB = new Vector2D(fractionToTiles(.847), GondorRB.y);
+
+	const EstMordorLT = new Vector2D(MordorRB.x, ConteaRB.y);
+	const EstMordorRB = new Vector2D(mapBounds.right, GondorRB.y);
+
+	const NordHaradLT = new Vector2D(mapBounds.left, GondorRB.y);
+	const NordHaradRB = new Vector2D(mapBounds.right, fractionToTiles(1 - .88));
+
+	const HaradLT = new Vector2D(mapBounds.left, NordHaradRB.y);
+	const HaradRB = new Vector2D(mapBounds.right, mapBounds.bottom);
 
 
 	const climateZones = [
@@ -83,8 +112,63 @@ export function* generateMap(mapSettings) {
 			"position2": Contea_LorienRB,
 			"biome": "generic/alpine",
 			"constraint": new NullConstraint()
+		},
+		{
+			"tileClass": g_TileClasses.Lorien,
+			"position1": LorienLT,
+			"position2": LorienRB,
+			"biome": "generic/temperate",
+			"constraint": new NullConstraint()
+		},
+		{
+			"tileClass": g_TileClasses.Rhun,
+			"position1": RhunLT,
+			"position2": RhunRB,
+			"biome": "generic/steppe",
+			"constraint": new NullConstraint()
+		},
+		{
+			"tileClass": g_TileClasses.Rohan,
+			"position1": RohanLT,
+			"position2": RohanRB,
+			"biome": "generic/steppe",
+			"constraint": new NullConstraint()
+		},
+		{
+			"tileClass": g_TileClasses.Gondor,
+			"position1": GondorLT,
+			"position2": GondorRB,
+			"biome": "generic/aegean",
+			"constraint": new NullConstraint()
+		},
+		{
+			"tileClass": g_TileClasses.Mordor,
+			"position1": MordorLT,
+			"position2": MordorRB,
+			"biome": "generic/sahara",
+			"constraint": new NullConstraint()
+		},
+		{
+			"tileClass": g_TileClasses.EstMordor,
+			"position1": EstMordorLT,
+			"position2": EstMordorRB,
+			"biome": "generic/steppe",
+			"constraint": new NullConstraint()
+		},
+		{
+			"tileClass": g_TileClasses.NordHarad,
+			"position1": NordHaradLT,
+			"position2": NordHaradRB,
+			"biome": "generic/steppe",
+			"constraint": new NullConstraint()
+		},
+		{
+			"tileClass": g_TileClasses.Harad,
+			"position1": HaradLT,
+			"position2": HaradRB,
+			"biome": "generic/sahara",
+			"constraint": new NullConstraint()
 		}
-
 	];
 
 	g_Map.log("Lowering sea ground");
