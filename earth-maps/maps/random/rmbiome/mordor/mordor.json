@@ -1,0 +1,68 @@
+{
+	"Description": {
+		"Title": "Mordor",
+		"Description": "Mordor"
+	},
+	"Terrains": {
+		"mainTerrain": [
+            "cliff volcanic light",
+            "ocean_rock_a",
+            "ocean_rock_b"
+		],
+		"forestFloor1": "temperate_forestfloor_01",
+		"forestFloor2": "temperate_forestfloor_01",
+		"cliff": [
+			"cliff volcanic coarse",
+			"cave_walls"
+		],
+		"tier1Terrain": "cliff volcanic light",
+		"tier2Terrain": "ocean_rock_a",
+		"tier3Terrain": "ocean_rock_b",
+		"tier4Terrain": "cliff volcanic light",
+		"hill": [
+			"cliff volcanic coarse"
+		],
+		"dirt": [
+			"dirt burned"
+		],
+		"road": "road1",
+		"roadWild": "road1",
+		"shoreBlend": "shoreline_stoney_a",
+		"shore": "shoreline_stoney_a",
+		"water": "shoreline_stoney_a"
+	},
+	"Gaia": {
+		"tree1": "gaia/tree/dead",
+        "tree2": "gaia/tree/elm_dead",
+        "tree3": "gaia/tree/oak_dead",
+        "tree4": "gaia/tree/poplar_dead",
+        "tree5": "gaia/tree/poplar_lombardy_dead",
+		"fruitBush": "gaia/fruit/berry_04",
+		"startingAnimal": "gaia/fauna_chicken",
+		"mainHuntableAnimal": "gaia/fauna_boar",
+		"fish": "gaia/fish/generic",
+		"secondaryHuntableAnimal": "gaia/fauna_goat",
+		"stoneLarge": "gaia/rock/alpine_large",
+		"stoneSmall": "gaia/rock/alpine_small",
+		"metalLarge": "gaia/ore/alpine_large",
+		"metalSmall": "gaia/ore/alpine_small"
+	},
+	"Decoratives": {
+		"grass": "actor|props/flora/grass_temp_field_brown.xml",
+		"grassShort": "actor|props/flora/grass_temp_field_brown.xml",
+		"reeds": "actor|props/flora/reeds_pond_lush_a.xml",
+		"lillies": "actor|props/flora/water_lillies.xml",
+		"rockLarge": "actor|geology/stone_granite_med.xml",
+		"rockMedium": "actor|props/flora/grass_temp_field_brown.xml",
+		"bushMedium": "actor|geology/stone_granite_med.xml",
+		"bushSmall": "actor|props/flora/grass_temp_field_brown.xml",
+		"tree": "actor|flora/trees/temperate_bush_biome.xml"
+	},
+	"ResourceCounts": {
+		"trees": {
+			"min": 0,
+			"max": 500,
+			"forestProbability": 0.1
+		}
+	}
+}
