@@ -2,7 +2,7 @@
 	"settings" : {
 		"Name" : "Middle Earth",
 		"Script" : "middle-earth.js",
-		"Description" : "",
+		"Description" : "A heightmap recreation of Tolkien's Middle-earth, from the ice wastes of Forodwaith to the deserts of Harad. Twelve climate zones shape terrain and resources across the continent, culminating in the volcanic desolation of Mordor.",
 		"Keywords": ["naval", "continental", "new", "middle earth", "the lord of the rings", "tltr"],
 		"Preview" : "middle-earth.png",
 		"CircularMap" : false
