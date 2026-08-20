@@ -568,7 +568,7 @@ export function* generateMap(mapSettings) {
 	placePlayersNomad(
 		g_Map.createTileClass(),
 		[
-			stayClasses(g_TileClasses.land, 5),
+			stayClasses(g_TileClasses.land, 15),
 			avoidClasses(
 				g_TileClasses.forest, 2,
 				g_TileClasses.rock, 4,

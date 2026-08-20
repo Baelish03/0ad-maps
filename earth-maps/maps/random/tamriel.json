@@ -2,7 +2,7 @@
 	"settings" : {
 		"Name" : "Tamriel",
 		"Script" : "tamriel.js",
-		"Description" : "A full-scale world map featuring realistic climate zones, from arctic tundra to tropical rainforests, savannas, and deserts.",
+		"Description" : "A heightmap recreation of Tamriel from The Elder Scrolls, spanning fifteen climate zones from the arctic peaks of Skyrim and Vvardenfell to the deserts of Hammerfell, Elsweyr, and Morrowind's ashlands.",
 		"Keywords": ["naval", "continental", "new", "tamriel", "tes", "the elder scrolls"],
 		"Preview" : "tamriel.png",
 		"CircularMap" : true

@@ -6,6 +6,7 @@
 - [Asia](./docs/Asia.md)
 - [Salento](./docs/Tamriel.md)
 - [Tamriel](./docs/Tamriel.md)
+- [Middle Earth](./docs/Middle_Earth.md)
 - [Guide](#guide-to-create-real-world-heightmap-maps-for-0-ad)
 
 
