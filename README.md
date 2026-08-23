@@ -4,7 +4,7 @@
 - [South America](./docs/South_America.md)
 - [World](./docs/World.md)
 - [Asia](./docs/Asia.md)
-- [Salento](./docs/Tamriel.md)
+- [Calabria](./docs/Calabria.md)
 - [Tamriel](./docs/Tamriel.md)
 - [Middle Earth](./docs/Middle_Earth.md)
 - [Guide](#guide-to-create-real-world-heightmap-maps-for-0-ad)
