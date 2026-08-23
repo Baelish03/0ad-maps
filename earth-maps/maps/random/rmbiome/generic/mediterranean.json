@@ -1,0 +1,103 @@
+{
+	"Description": {
+		"Title": "Mediterranean",
+		"Description": "Start in a region blessed with the Mediterranean climate, a warm and inviting land. Olives and figs are everywhere."
+	},
+	"Environment": {
+		"SunColor": { "r": 1.023, "g": 0.923, "b": 0.714 },
+		"SunElevation": 0.8,
+		"SunRotation": -0.909,
+		"AmbientColor": { "r": 0.4, "g": 0.4, "b": 0.4 },
+		"Water": {
+			"WaterBody": {
+				"Color": { "r": 0.024, "g": 0.212, "b": 0.212 },
+				"Tint": { "r": 0.133, "g": 0.725, "b": 0.855 },
+				"Murkiness": 0.8,
+				"Waviness": 3
+			}
+		},
+		"Fog": {
+			"FogThickness": 0.25,
+			"FogFactor": 0.003
+		},
+		"Postproc": {
+			"PostprocEffect": "hdr",
+			"Brightness": 0,
+			"Saturation": 1,
+			"Contrast": 1,
+			"Bloom": 0.16
+		}
+	},
+	"Terrains": {
+		"mainTerrain": [
+			"medit_grass_field",
+			"medit_grass_field_a",
+			"medit_grass_field_b"
+		],
+		"forestFloor1": "medit_forestfloor_a",
+		"forestFloor2": "medit_grass_flowers",
+		"cliff": [
+			"medit_cliff_italia",
+			"medit_cliff_italia_grass"
+		],
+		"tier1Terrain": "medit_grass_field",
+		"tier2Terrain": "medit_grass_field_a",
+		"tier3Terrain": "medit_grass_field_b",
+		"tier4Terrain": "medit_grass_field_dry",
+		"hill": [
+			"medit_rocks_grass",
+			"medit_rocks_grass_shrubs",
+			"medit_rocks_shrubs"
+		],
+		"dirt": [
+			"medit_dirt",
+			"medit_dirt_b",
+			"medit_dirt_c",
+			"medit_dirt_d",
+			"medit_dirt_e"
+
+		],
+		"farmland": "medit_farmland",
+		"road": "medit_city_pavement",
+		"roadWild": "medit_rocks_grass",
+		"shoreBlend": "medit_sand_messy",
+		"shore": "medit_sand",
+		"water": "medit_sand_wet"
+	},
+	"Gaia": {
+		"startingAnimal": "gaia/fauna_sheep",
+		"mainHuntableAnimal": "gaia/fauna_fox_red",
+		"fish": "gaia/fish/tuna",
+		"secondaryHuntableAnimal": "gaia/fauna_goat",
+		"stoneLarge": "gaia/rock/aegean_large",
+		"stoneSmall": "gaia/rock/aegean_small",
+		"metalLarge": "gaia/ore/aegean_anatolian_01",
+		"metalSmall": "gaia/ore/aegean_anatolian_small_01",
+		"tree1": "gaia/tree/olive",
+        "tree2": "gaia/tree/pine_maritime",
+        "tree3": "gaia/tree/medit_fan_palm",
+        "tree4": "gaia/tree/carob",
+        "tree5": "gaia/tree/bamboo_single",
+		"fruitBush": "gaia/fruit/fig"
+	},
+	"Decoratives": {
+		"grass": "actor|props/flora/bush_medit_sm.xml",
+		"grassShort": "actor|props/flora/bush_medit_sm.xml",
+		"reeds": "actor|props/flora/reeds_pond_lush_b.xml",
+		"lillies": "actor|props/flora/water_lillies.xml",
+		"rockLarge": "actor|geology/stone_granite_large.xml",
+		"rockMedium": "actor|geology/stone_granite_med.xml",
+		"bushMedium": "actor|flora/bushes/medit_scrub_01.xml",
+		"bushSmall": "actor|flora/trees/lavender_bush_01.xml",
+		"tree": "actor|flora/trees/cypress_mediterranean_wild.xml"
+	},
+	"ResourceCounts": {
+		"trees": {
+			"min": 500,
+			"max": 2000,
+			"forestProbability": 0.6
+		},
+		"woodAvailability": 1
+	}
+}
+

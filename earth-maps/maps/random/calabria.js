@@ -45,7 +45,7 @@ export function* generateMap(mapSettings) {
 			"tileClass": g_TileClasses.southern_europe,
 			"position1": new Vector2D(mapBounds.left, mapBounds.bottom),
 			"position2": new Vector2D(mapBounds.right, mapBounds.top),
-			"biome": "generic/aegean",
+			"biome": "generic/mediterranean",
 			"constraint": new NullConstraint()
 		}
 	];
@@ -120,7 +120,7 @@ export function* generateMap(mapSettings) {
 	}
 	yield 50;
 
-	g_Map.log("Placing olive trees");
+	/*g_Map.log("Placing olive trees");
 	const num = scaleByMapSize(25, 100);
 	createObjectGroups(
 		new SimpleGroup(
@@ -139,7 +139,7 @@ export function* generateMap(mapSettings) {
 			)
 		],
 		num
-	);
+	);*/
 
 	g_Map.log("Placing wolves");
 	createObjectGroups(
