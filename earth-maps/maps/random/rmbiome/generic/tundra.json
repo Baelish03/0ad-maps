@@ -1,0 +1,74 @@
+{
+	"Description": {
+		"Title": "Tundra",
+		"Description": "Tundra biome"
+	},
+	"Terrains": {
+		"mainTerrain": [
+			"polar_tundra_snow",
+			"polar_tundra",
+			"polar_snow_rocks",
+			"polar_grass_snow"
+		],
+		"forestFloor1": "alpine_forrestfloor_snow",
+		"forestFloor2": "alpine_forrestfloor_snow",
+		"cliff": [
+			"polar_cliff_snow",
+			"polar_cliff_a",
+			"polar_cliff_b"
+			],
+		"tier1Terrain": "polar_tundra_snow",
+		"tier2Terrain": "polar_tundra",
+		"tier3Terrain": "polar_snow_rocks",
+		"tier4Terrain": "polar_grass_snow",
+
+		"hill": [
+			"alpine_shore_rocks_grass_50",
+			"alpine_shore_rocks_icy"
+		],
+		"dirt": [
+			"ice_dirt",
+			"alpine_dirt_snow"
+		],
+		"farmland": "farmland_a",
+		"road": "alpine_paving_stones_01",
+		"roadWild": "new_alpine_citytile",
+		"shoreBlend": "shoreline_stoney_a",
+		"shore": "shoreline_stoney_a",
+		"water": "ocean_rock_a"
+	},
+	"Gaia": {
+		"startingAnimal": "gaia/fauna_fox_arctic",
+		"mainHuntableAnimal": "gaia/fauna_deer",
+		"fish": "gaia/fish/tuna",
+		"secondaryHuntableAnimal": "gaia/fauna_bear_polar",
+		"stoneLarge": "gaia/rock/polar_01",
+		"stoneSmall": "gaia/rock/alpine_small",
+		"metalLarge": "gaia/ore/polar_01",
+		"metalSmall": "gaia/ore/alpine_small",
+		"tree1": "gaia/tree/bush_temperate_winter",
+		"tree2": "gaia/tree/bush_temperate_winter",
+		"tree3": "gaia/tree/bush_temperate_winter",
+		"tree4": "gaia/tree/fir_winter",
+		"tree5": "gaia/tree/pine_w",
+		"fruitBush": "gaia/fruit/berry_03"
+		},
+	"Decoratives": {
+		"grass": "actor|flora/trees/grass_1.xml",
+		"grassShort": "actor|flora/trees/grass_1.xml",
+		"reeds": "actor|props/flora/reeds_a.xml",
+		"lillies": "actor|props/flora/water_lillies.xml",
+		"rockLarge": "actor|geology/stone_scandiv_formation.xml",
+		"rockMedium": "actor|geology/stonemine_alpine_a.xml",
+		"bushMedium": "actor|props/flora/berry_bush_winter_01.xml",
+		"bushSmall": "actor|props/flora/berry_bush_dead_01.xml",
+		"tree": "actor|flora/trees/pine_black_dead.xml"
+	},
+	"ResourceCounts": {
+		"trees": {
+			"min": 500,
+			"max": 1000,
+			"forestProbability": 0.1
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"settings": {
+		"Name": "North America",
+		"Script": "north_america_random.js",
+		"Description": "A large-scale map of North America built from real elevation data, featuring eleven distinct climate zones from Caribbean jungle to Californian scrubland, desert, steppe, temperate forest, taiga, and tundra",
+		"Keywords": [
+			"naval",
+			"new",
+			"north america",
+			"random",
+			"earth"
+		],
+		"Preview": "north_america_random.png",
+		"CircularMap": true
+	}
+}
