@@ -44,16 +44,7 @@
     <Acceleration op="mul">0.45</Acceleration>
   </UnitMotion>
   <VisualActor>
-    <Actor>fauna/tapir.xml</Actor>
+    <Actor>fauna/tapir_asia.xml</Actor>
   </VisualActor>
-  <group>
-    <variant frequency="1" name="Fur-Black">
-      <textures>
-        <texture file="skeletal/tapir_indicus.png" name="baseTex"/>
-        <texture file="default_norm.png" name="normTex"/>
-        <texture file="null_black.dds" name="specTex"/>
-      </textures>
-    </variant>
-  </group>
 </Entity>
 

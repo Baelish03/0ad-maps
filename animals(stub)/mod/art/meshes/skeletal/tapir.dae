@@ -1,0 +1,30 @@
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <created>2026-09-22T18:33:47.346719</created>
+    <modified>2026-09-22T18:33:47.346734</modified>
+    <unit name="metre" meter="1.0" />
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_visual_scenes>
+    <visual_scene id="SCE-main">
+      <node id="EM-Empty" name="EM-Empty">
+        <matrix>-4.371139e-08 4.371139e-08 1.0 0.0 1.0 1.9106857e-15 4.371139e-08 0.0 0.0 1.0 -4.371139e-08 1.38 0.0 0.0 0.0 1.0</matrix>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#SCE-main" />
+  </scene>
+  <extra>
+    <technique profile="BLENDER028">
+      <id_prefixes>
+        <prefix name="CAMERA" value="CA-" />
+        <prefix name="EMPTY" value="EM-" />
+        <prefix name="LAMP" value="LA-" />
+        <prefix name="MATERIAL" value="MA-" />
+        <prefix name="MESH" value="ME-" />
+        <prefix name="SCENE" value="SCE-" />
+      </id_prefixes>
+    </technique>
+  </extra>
+</COLLADA>
